@@ -34,7 +34,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
-  <component name="IdProvider" IDEtalkID="B4D078D5A2C016AE991633BC8CAC78AC" />
+  <component name="IdProvider" IDEtalkID="ADE9B34979ABA86C6921317E0B546C83" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -56,7 +56,7 @@
     <modules />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
-    <output url="file://$PROJECT_DIR$/out" />
+    <output url="file://$PROJECT_DIR$/classes" />
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
