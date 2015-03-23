@@ -1,11 +1,7 @@
-import java.util.Scanner;
-
 /**
- * Hello world!
- *
+ * Created by Kindevil on 2015/3/24.
  */
-public class App
-{
+public class test {
     public static void main( String[] args )
     {
         winToLinux("E:\\01MyFile\\CScience\\Java\\idea\\ideaWP\\webssm");
@@ -25,4 +21,6 @@ public class App
         System.out.println(chs);
         return  chs.toString();
     }
+
+
 }
