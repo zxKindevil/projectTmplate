@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--<start id="duke_bean" />-->
+    <!-- 简介 -->
+    <bean id="duke"
+          class="com.springinaction.springidol.Juggler">
+        <constructor-arg value="15"/>
+    </bean>
+
+    <!-- 构造方法DI -->
+    <bean id="poeticDuke"
+          class="com.springinaction.springidol.PoeticJuggler">
+        <constructor-arg value="15"/>
+        <constructor-arg ref="sonnet29" />
+    </bean>
+
+    <bean id="sonnet29" class="com.springinaction.springidol.Sonnet29" />
+
+    <!-- 工厂方法DI -->
+    <bean id="theStage" class="com.springinaction.springidol.Stage"
+          factory-method="getInstance" />
+    <!-- setter方法DI -->
+    <bean id="kenny" class="com.springinaction.springidol.Instrumentalist" >
+            <property name="song" value="Jingle Bells" />
+        <property name="instrument" ref="piano" />
+    </bean>
+
+    <bean id="saxophone" class="com.springinaction.springidol.Saxophone" />
+
+    <bean id="piano" class="com.springinaction.springidol.Piano" />
+
+    <bean id="counter" class="com.springinaction.springidol.Counter" scope="prototype" />
+</beans>
